@@ -1,7 +1,15 @@
 # versions
 Script to fetch (and store) the latest platform versions
 
-To list all platform's versions:
+Run the script:
+
+    ./versions.sh magento
+
+To include it in a cron:
+
+    ./versions.sh -q magento
+
+To list all platform's versions (from the files created by the script):
 
     for i in `ls`; do echo -e "$i:\t`cat $i`"; done
 
